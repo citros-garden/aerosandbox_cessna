@@ -1,0 +1,6 @@
+aerosandbox_cessna:
+  ros__parameters:
+    h_0: 1000.0
+    v_0: 107.0
+    publish_freq: 10.0
+    

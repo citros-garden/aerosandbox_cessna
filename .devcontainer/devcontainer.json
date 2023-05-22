@@ -13,7 +13,7 @@
 		"--security-opt=seccomp:unconfined",
 		"--security-opt=apparmor:unconfined",
 		"--volume=/tmp/.X11-unix:/tmp/.X11-unix",
-		"--volume=/mnt/wslg:/mnt/wslg"
+		// "--volume=/mnt/wslg:/mnt/wslg"
 	],
 	"containerEnv": {
 		"DISPLAY": "${localEnv:DISPLAY}", // Needed for GUI try ":0" for windows
@@ -40,5 +40,12 @@
 				"betwo.b2-catkin-tools"
 			]
 		}
+	},
+	"features": {		
+		"ghcr.io/devcontainers/features/docker-in-docker:2": {
+			"version": "latest",
+			"moby": true
+		}
+		// "ghcr.io/dhoeric/features/google-cloud-cli:1": {}
 	}
 }
