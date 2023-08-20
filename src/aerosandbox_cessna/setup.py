@@ -12,7 +12,7 @@ setup(
         ('share/ament_index/resource_index/packages',
             ['resource/' + package_name]),
         ('share/' + package_name, ['package.xml']),
-        (os.path.join('share', package_name, 'launch'), glob('launch/launch.py')),
+        (os.path.join('share', package_name, 'launch'), glob('launch/*.launch.py')),
         (os.path.join('share', package_name, 'config'), glob('config/*.yaml')),
         (os.path.join('share', package_name, 'resource'), glob('resource/*.*'))
     ],
@@ -20,7 +20,7 @@ setup(
     zip_safe=True,
     maintainer='ros',
     maintainer_email='gleb@lulav.space',
-    description='Simple Spiceypy example showing the position of the Cassini spacecraft relative to the barycenter of Saturn',
+    description='Simple Aerosandbox example showing the gliding flight states after engine fail',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
