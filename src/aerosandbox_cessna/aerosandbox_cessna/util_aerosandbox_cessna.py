@@ -1,7 +1,7 @@
 import aerosandbox as asb
-import numpy as np
+import aerosandbox.numpy as np
 from aerosandbox.tools import units as u
-from cessna152 import airplane
+from . import cessna152
 
 from aerosandbox.weights.mass_properties_of_shapes import mass_properties_from_radius_of_gyration
 
@@ -22,10 +22,10 @@ def run(ros_node, h_0, v_0):
 
     ### Define time. Note that the horizon length is unknown.
     time_final_guess = 100
-    time = np.linspace(
+    time = np.cosspace(
         0,
         opti.variable(init_guess=time_final_guess, log_transform=True),
-        250
+        100
     )
     N = np.length(time)
 
@@ -57,7 +57,7 @@ def run(ros_node, h_0, v_0):
     dyn.add_gravity_force(g=9.81)
 
     aero = asb.AeroBuildup(
-        airplane=airplane,
+        airplane=cessna152.airplane,
         op_point=dyn.op_point
     ).run()
 

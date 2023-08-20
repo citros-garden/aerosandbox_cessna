@@ -10,8 +10,8 @@ def ft(feet, inches=0.):  # Converts feet (and inches) to meters
 
 naca2412 = asb.Airfoil("naca2412")
 naca0012 = asb.Airfoil("naca0012")
-naca2412.generate_polars(cache_filename='/workspaces/aerosandbox/src/aerosandbox/resource/naca2412.json')
-naca0012.generate_polars(cache_filename="/workspaces/aerosandbox/src/aerosandbox/resource/naca0012.json")
+naca2412.generate_polars(cache_filename='/workspaces/aerosandbox_cessna/src/aerosandbox_cessna/resource/naca2412.json')
+naca0012.generate_polars(cache_filename="/workspaces/aerosandbox_cessna/src/aerosandbox_cessna/resource/naca0012.json")
 
 airplane = asb.Airplane(
     name="Cessna 152",

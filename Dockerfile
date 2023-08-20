@@ -27,7 +27,7 @@ RUN apt-get update && DEBIAN_FRONTEND=noninteractive  && apt-get install -y  --n
     ros-humble-rosbridge-suite \    
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install aerosandbox[full]
+RUN pip install aerosandbox[full] numpy
 RUN apt-get update && apt-get install ffmpeg libsm6 libgl1 libxext6  -y
 
 RUN sudo apt-get update && apt-get install -y \
@@ -39,11 +39,11 @@ RUN sudo apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/* 
 RUN  pip install mcap-ros2-support
 
-WORKDIR /workspaces/aerosandbox
+WORKDIR /workspaces/aerosandbox_cessna
 COPY . .
 RUN colcon build
 
-RUN pip install citros==23.17.7
+RUN pip install citros
 
 RUN chmod +x ros2_entrypoint.sh
 ENTRYPOINT ["/workspaces/spiceypy/ros2_entrypoint.sh"]
