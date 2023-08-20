@@ -1,8 +1,0 @@
-Dockerfile
-docs
-foxglove_layouts
-LICENSE
-log.txt
-README.md
-ros2_entrypoint.sh
-src

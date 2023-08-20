@@ -29,7 +29,7 @@
         {
             "label": "launch",
             "type": "shell",
-            "command": "source install/local_setup.bash && ros2 launch scheduler simulator.launch.py",
+            "command": "source install/local_setup.bash && ros2 launch aerosandbox_cessna aerosandbox_cessna.launch.py",
             "problemMatcher": [],
             "dependsOn": ["build"]
         },
