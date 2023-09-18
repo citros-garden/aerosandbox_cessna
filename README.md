@@ -69,22 +69,22 @@ ros2 launch aerosandbox_cessna launch.py
 ```
 4. Watch the FoxGlove plot built from results!
 
-# Citros usage 🛸
-Although you can get simulation results using FoxGlove, the best way to work with such simulations and process the results is Citros! With its power, it is possible to create complex data processing scenarios, including the construction of more complex graphs, mathematical analysis and other high-level processing methods.
+# CITROS usage 🛸
+Although you can get simulation results using FoxGlove, the best way to work with such simulations and process the results is CITROS! With its power, it is possible to create complex data processing scenarios, including the construction of more complex graphs, mathematical analysis and other high-level processing methods.
 
-## Citros integration
+## CITROS integration
 1. Build Docker image:
 ```bash
 docker build -t aerosandbox_cessna .
 # OR *** when building from MAC M1 chip add FROM --platform=linux/amd64 ***
 docker buildx build --platform linux/amd64 -t aerosandbox_cessna .   
 ```
-2. Login to Citros
+2. Login to CITROS
  ```bash
 citros login
 citros docker-login
 ```
-3. Tag your project and push it into Citros cloud
+3. Tag your project and push it into CITROS cloud
  ```bash
 docker tag aerosandbox_cessna us-central1-docker.pkg.dev/citros/lulav/aerosandbox_cessna
 docker push us-central1-docker.pkg.dev/citros/lulav/aerosandbox_cessna
