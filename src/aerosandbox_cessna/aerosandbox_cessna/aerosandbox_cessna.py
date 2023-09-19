@@ -15,8 +15,8 @@ class aerosandbox_cessna(Node):
         self.get_logger().info(f"Starting aerosandbox_cessna version = 0.0.0")
 
         #Defining inputs
-        self.declare_parameter('h_0', 1000) # altitude, m
-        self.declare_parameter('v_0', 107) # velocity, knots
+        self.declare_parameter('h_0', 1000.0) # altitude, m
+        self.declare_parameter('v_0', 107.0) # velocity, knots
 
         self.declare_parameter('publish_freq', 10.0)   
         
@@ -39,13 +39,13 @@ class aerosandbox_cessna(Node):
 
     def timer_callback(self):
 
-        self.state_msg.data = [self.res_x[self.i], self.res_h[self.i], self.res_v[self.i]]
+        self.state_msg.data = [self.res_x[self.i], -self.res_h[self.i], self.res_v[self.i]]
 
         self.state_pub.publish(self.state_msg)
         self.get_logger().info(f"Publishing = {self.state_msg.data}")
 
         self.i += 1
-        if self.i==len(self.res_orb):
+        if self.i==len(self.res_x):
             self.get_logger().info('All data published successfully')
             exit()
         

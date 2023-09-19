@@ -1,5 +1,4 @@
-/node_modules
-/.citros
+.citros
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

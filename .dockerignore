@@ -22,7 +22,6 @@ docker
 .vagrant
 .data
 .idea
-.citros
 app/sessions/*
 app/logs/*
 app/cache/*

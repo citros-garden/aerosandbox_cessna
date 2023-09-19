@@ -1,0 +1,56 @@
+{
+  "configById": {
+    "Plot!6wyhzv": {
+      "paths": [
+        {
+          "value": "/aerosandbox_cessna/state.data[1]",
+          "enabled": true,
+          "timestampMethod": "receiveTime"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": true,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "custom",
+      "sidebarDimension": 240,
+      "xAxisPath": {
+        "value": "/aerosandbox_cessna/state.data[0]"
+      },
+      "foxglovePanelTitle": "Altitude vs Ground path"
+    },
+    "Plot!5xtru6": {
+      "paths": [
+        {
+          "value": "/aerosandbox_cessna/state.data[2]",
+          "enabled": true,
+          "timestampMethod": "receiveTime"
+        }
+      ],
+      "showXAxisLabels": true,
+      "showYAxisLabels": true,
+      "showLegend": true,
+      "legendDisplay": "floating",
+      "showPlotValuesInLegend": false,
+      "isSynced": true,
+      "xAxisVal": "timestamp",
+      "sidebarDimension": 240,
+      "xAxisPath": {
+        "value": "/aerosandbox_cessna/state.data[1]"
+      },
+      "foxglovePanelTitle": "Velocity / Time"
+    }
+  },
+  "globalVariables": {},
+  "userNodes": {},
+  "playbackConfig": {
+    "speed": 1
+  },
+  "layout": {
+    "first": "Plot!6wyhzv",
+    "second": "Plot!5xtru6",
+    "direction": "row"
+  }
+}
