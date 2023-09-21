@@ -26,6 +26,8 @@ class aerosandbox_cessna(Node):
         # Defining encounter for publisher
         self.i = 0        
 
+        self.get_logger().info(f"With h_0 = {self.h_0}, v_0 = {self.v_0}")
+
         #################################
         # Calling simulation function using parameters declared above
         self.res_x, self.res_h, self.res_v =  util_aerosandbox_cessna.run(self,
