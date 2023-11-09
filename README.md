@@ -1,13 +1,4 @@
----
-slug: Aerosandbox example using CITROS
-title: Aerosandbox example using CITROS
-authors: [gtep]
-tags: [CITROS]
----
-
-Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).
-
-![jpg](img/cessna152.jpg "https://en.wikipedia.org/wiki/File:Cessna_152_PR-EJQ_(8476096843).jpg")
+![jpg](/docs/img/cessna152.jpg "https://en.wikipedia.org/wiki/File:Cessna_152_PR-EJQ_(8476096843).jpg")
 
 ## Example overview 🌐 
 
@@ -77,7 +68,7 @@ You can use prepared layout: Go to the ```Layout``` tab on the top panel, then c
 
 :::
 
-![gif](img/gif0.gif "FoxGlove example")
+![gif](/docs/img/gif0.gif "FoxGlove example")
 
 :::tip
 
@@ -102,7 +93,7 @@ You can use Visual Code Tasks: simply press ```Alt+T``` and select the task you 
 
 :::
 
-![png](img/img0.png "FoxGlove example")
+![png](/docs/img/img0.png "FoxGlove example")
 
 ## CITROS usage 🛸
 Although you can get simulation results using FoxGlove, the best way to work with such simulations and process the results is CITROS! With its power, it is possible to create complex data processing scenarios, including the construction of more complex graphs, mathematical analysis and other high-level processing methods.
@@ -190,4 +181,4 @@ You can find all the data analisys package [here](https://citros.io/doc/docs_dat
 ## Extras
 ### FoxGlove examples
 
-![png](img/img1.png "FoxGlove example")
+![png](/docs/img/img1.png "FoxGlove example")
