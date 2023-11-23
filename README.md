@@ -1,13 +1,4 @@
----
-slug: Aerosandbox example using CITROS
-title: Aerosandbox example using CITROS
-authors: [gtep]
-tags: [CITROS]
----
-
-Blog posts support [Docusaurus Markdown features](https://docusaurus.io/docs/markdown-features), such as [MDX](https://mdxjs.com/).
-
-![jpg](img/cessna152.jpg "https://en.wikipedia.org/wiki/File:Cessna_152_PR-EJQ_(8476096843).jpg")
+![jpg](/docs/img/cessna152.jpg "https://en.wikipedia.org/wiki/File:Cessna_152_PR-EJQ_(8476096843).jpg")
 
 ## Example overview 🌐 
 
@@ -77,7 +68,7 @@ You can use prepared layout: Go to the ```Layout``` tab on the top panel, then c
 
 :::
 
-![gif](img/gif0.gif "FoxGlove example")
+![gif](/docs/img/gif0.gif "FoxGlove example")
 
 :::tip
 
@@ -102,7 +93,7 @@ You can use Visual Code Tasks: simply press ```Alt+T``` and select the task you 
 
 :::
 
-![png](img/img0.png "FoxGlove example")
+![png](/docs/img/img0.png "FoxGlove example")
 
 ## CITROS usage 🛸
 Although you can get simulation results using FoxGlove, the best way to work with such simulations and process the results is CITROS! With its power, it is possible to create complex data processing scenarios, including the construction of more complex graphs, mathematical analysis and other high-level processing methods.
@@ -119,7 +110,7 @@ citros init
 ```
 Now you can see ```.citros``` folder in the explorer.
 
-2. Configuring the setup. We need to set up the maximum perfomance available: timeout, CPU, GPU and Memory. To perform it, we need to define it in the ```.citros/simulations/simulation_aerosandbox_cessna.json```. The recommended setup is minimum 180 seconds timeout, 2 CPU, 2 GPU and 1024 MB of Memory. Don't forget to save the file!
+2. Configuring the setup. We need to set up the maximum perfomance available: timeout, CPU, GPU and Memory. To perform it, we need to define it in the ```.citros/simulations/simulation_aerosandbox_cessna.json```. The recommended setup is minimum 180 seconds timeout, 8 CPU, 2 GPU and 4096 MB of Memory. Don't forget to save the file!
 
 3. Configuring the params setup. You can find default setup in ```.citros/parameter_setups/default_param_setup.json```. The Aerosanbox simulation has the following ROS parameters:
 
@@ -190,4 +181,4 @@ You can find all the data analisys package [here](https://citros.io/doc/docs_dat
 ## Extras
 ### FoxGlove examples
 
-![png](img/img1.png "FoxGlove example")
+![png](/docs/img/img1.png "FoxGlove example")
