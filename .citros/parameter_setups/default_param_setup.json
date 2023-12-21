@@ -1,0 +1,16 @@
+{
+    "packages": {
+        "aerosandbox_cessna": {
+            "aerosandbox_cessna": {
+                "ros__parameters": {
+                    "h_0": {
+                        "function": "my_func.py:func_with_context",
+                        "args": [1000.0]
+                    },
+                    "publish_freq": 10.0,
+                    "v_0": 107.0
+                }
+            }
+        }
+    }
+}

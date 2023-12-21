@@ -1,0 +1,14 @@
+{
+    "CPU": 4,
+    "GPU": 4,
+    "MEM": 4096,
+    "description": "Default simulation. Change the values according to your needs.",
+    "id": "5bf24da0-c1e2-4f7c-a914-423ed700c787",
+    "launch": {
+        "file": "aerosandbox_cessna.launch.py",
+        "package": "aerosandbox_cessna"
+    },
+    "parameter_setup": "default_param_setup.json",
+    "storage_type": "MCAP",
+    "timeout": 180
+}

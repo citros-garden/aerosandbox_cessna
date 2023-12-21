@@ -1,0 +1,57 @@
+{
+    "citros_cli_version": "0.1.7",
+    "cover": "",
+    "description": "",
+    "git": "git@github.com:citros-garden/aerosandbox_cessna.git",
+    "is_active": true,
+    "launches": [],
+    "packages": [
+        {
+            "cover": "",
+            "description": "Simple example using AeroSandbox",
+            "git": "",
+            "launches": [
+                {
+                    "description": "",
+                    "name": "aerosandbox_cessna.launch.py",
+                    "path": "src/aerosandbox_cessna/launch/aerosandbox_cessna.launch.py"
+                }
+            ],
+            "maintainer": "ros",
+            "maintainer_email": "gleb@lulav.space",
+            "name": "aerosandbox_cessna",
+            "nodes": [
+                {
+                    "entry_point": "aerosandbox_cessna.aerosandbox_cessna:main",
+                    "name": "aerosandbox_cessna",
+                    "parameters": [
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "h_0",
+                            "parameterType": "float",
+                            "value": 1000.0
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "v_0",
+                            "parameterType": "float",
+                            "value": 107.0
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "publish_freq",
+                            "parameterType": "float",
+                            "value": 10.0
+                        }
+                    ],
+                    "path": "src/aerosandbox_cessna/aerosandbox_cessna/aerosandbox_cessna.py"
+                }
+            ],
+            "package_xml": "src/aerosandbox_cessna/package.xml",
+            "parameters": {},
+            "path": "src/aerosandbox_cessna",
+            "setup_py": "src/aerosandbox_cessna/setup.py"
+        }
+    ],
+    "tags": []
+}
