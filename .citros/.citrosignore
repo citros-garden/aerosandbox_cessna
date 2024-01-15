@@ -1,0 +1,11 @@
+# this is a comment
+
+# To ignore a package, write the package dir path relative to the project dir.
+# A package dir is a dir with a package.xml file
+# Example:
+# src/cannon_analytic
+
+# To ignore a launch file, write the file path relative to the project dir.
+# A launch file is a file of the form *.launch.py
+# Example:
+# src/scheduler/launch/cannon_analytic.launch.py
